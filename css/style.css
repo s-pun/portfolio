@@ -1,0 +1,282 @@
+body {
+	width: 1100px;
+	max-width: 95%;
+	background: #171717;
+	margin: auto;
+	font-family: "Titillium Web",Verdana, Helvetica, Sans-Serif;
+	color: #F5DEB3;
+    text-align:justify;
+}
+
+header, footer {
+    display: block;
+}
+
+a:link, a:visited,
+a:active, a:hover {
+    color: #4B4EFA;
+    outline: none;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-decoration: none;
+}
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+	clear: right;
+	margin-bottom: 5px;
+}
+
+/* site title
+----------------------------------------------------------*/
+.site-title {
+	font-weight: bold;
+    font-family: "Exo", Verdana, Helvetica, sans-serif;
+	font-size: 3.5em;
+	margin: 20px 0;
+}
+
+.site-title a {
+    color: #23365E;
+}
+
+h1 {
+	margin: 50px 0 0 0;
+}
+
+/* navigati0n menu	
+----------------------------------------------------------*/
+#menu,
+#menu ul,
+#menu li,
+#menu a {
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+#menu {
+	height: 40px;
+	background: #8E9CFA;
+	border-top: 3px solid #F51D30;
+	border-radius: 5px 5px 0 0;
+}
+
+#menu li {
+	height: 40px;
+	display: block;
+	float: left;
+	position: relative;
+	list-style: none;
+}
+
+#menu li a {
+	display: block;
+	padding: 0 14px;
+	margin: 6px 0;
+	font-weight: bold;
+	font-size: 12pt;
+	text-align: center;
+	text-decoration: none;
+	color: #FFFFFF;
+	text-shadow: 1px 1px 1px #000000;
+	border-right: 1px solid #A6DBED;
+}
+
+#menu li:hover a {
+	background: #F53647;
+}
+
+#menu li.current-page a {
+	background: #F53647;
+}
+
+#sub-menu {
+	width: 200px;
+	position: absolute;
+	opacity: 0;
+	top: 30px;
+	left: 0;
+	background: #F53647;
+} 
+
+#menu li:hover #sub-menu {
+	opacity: 1;
+}
+
+#sub-menu li {
+	float: none;
+	height: 30px;
+	margin: 0;
+	border-bottom: 1px solid #A6DBED;
+}
+
+#sub-menu li a {
+	display: block;
+	background: #F51D30;
+	font-weight: normal;
+	text-align: left;
+	border-right: none;
+}
+
+#sub-menu li a:hover {
+	font-weight: bold;
+}
+
+
+/* main content	
+----------------------------------------------------------*/
+.main-heading h1 {
+	margin-top: 70px;
+	font-family: "Exo", Verdana, Helvetica, Sans-Serif;
+	color: #F51D30; 
+	clear: both;
+}
+
+.content-wrapper {
+	float: left;
+	width: 71%;
+	margin-top: 10px;
+	
+}
+
+.homepage-content p {
+	text-align: justify;
+	color: #A38656;
+	height: 450px;
+	padding-right: 25px;
+}
+
+.page-content {
+	color: #A38656;
+	border-radius: 8px 8px 0 0;
+	box-shadow: 0px 0px 3px #A6DBED;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.page-content .heading {
+	background: #3C4047;
+	border-radius: 8px 8px 0 0;
+	padding: 10px;
+}	
+
+.page-content .body {
+	padding: 10px;
+}
+
+.page-content .body .sub-heading {
+	font-weight: bold;
+}
+
+.page-content .heading .dates {
+	font-style: italic;
+}
+
+/* projects page
+----------------------------------------------------------*/
+.main-heading p {
+    color: #A38656;
+}
+
+.projects {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.project-title {
+	max-width: 350px;
+	background: #3C4047;
+	border-radius: 5px;
+}
+
+.project-title p {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+	padding: 10px 0 10px 0;
+}
+
+.project-description {
+    color: #A38656;
+	border-top: 1px solid #A6DBED;
+	border-bottom: 1px solid #A6DBED;
+	padding-bottom: 5px;
+}
+
+.project-description > p:first-child {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.project-description img {
+	margin-left: 20px;
+}
+
+/* side bar at the right	
+----------------------------------------------------------*/
+.side-wrapper {
+	float: right;
+	width: 23%;
+	margin: 5px 0;
+	padding: 1%;
+	
+}
+
+aside {
+	background: #3C4047; 
+	height: 450px;
+	margin:10px 0;
+	padding: 15px;
+	box-shadow: 0 0 10px #3C4047;
+}
+
+.aside-main-heading {
+	background: #171717;
+	padding: 1px;
+	border-radius: 20px 0px 20px 0px;
+	
+}
+
+.aside-main-heading p {
+	text-align: center;
+	font-weight: bold;
+}
+
+.skills {
+	background: #F51D30;
+	padding-bottom: 5px;
+}
+p.skills-heading {
+	background: #171717;
+	text-align: center;
+	padding: 5px;
+}
+
+ul.skills-list {
+	list-style-type: none;
+	padding-left: 5px;
+}
+
+ul.skills-list li {
+	margin-bottom: 5px;
+	border-bottom: dashed 1px #171717;
+}
+
+
+/* footer	
+----------------------------------------------------------*/
+footer {
+	clear: both;
+	background: #F51D30;
+	height: 40px;
+	text-align: center;
+	padding: 8px;
+	border-radius: 0 0 5px 5px;
+}
+
